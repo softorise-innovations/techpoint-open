@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.jpg" type="image/gif" />
+  <meta name="keywords" content="refurbished laptops, second hand laptop under 5000, 2 hand laptop, refurbished laptops under 10000, refurbished notebook laptop, 2nd hand laptop shop near me, laptop screen replacement, keyboard repair, battery replacement, motherboard repair, laptop cleaning and maintenance, data backup services, Lucknow, TechPoint" />
+  <meta name="description" content="TechPoint offers high-quality refurbished laptops, affordable second hand laptops, and professional laptop services including screen replacement, battery replacement, and cleaning in Lucknow. Find the best deals on used laptops and notebook computers." />
+  <meta name="author" content="" />
+  <meta name="author" content="" />
+
+  <title>TechPoint: About</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div id="header-placeholder"></div>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About TechPoint
+              </h2>
+            </div>
+            <p>
+              TechPoint is dedicated to providing high-quality refurbished laptops and comprehensive laptop services in Lucknow. Our mission is to make reliable technology accessible and affordable for everyone-whether you’re a student, professional, or business owner. Every refurbished laptop is carefully inspected and certified for performance and durability. In addition to offering top-value devices, we provide expert solutions including laptop screen replacement, battery replacement, cleaning, and maintenance. With a focus on customer satisfaction and transparency, TechPoint is your trusted partner for all things laptops.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- footer section -->
+  <div id="footer-placeholder"></div>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+    </script>
+   <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+        // Set the copyright year if needed
+        if(document.getElementById('displayYear')) {
+          document.getElementById('displayYear').textContent = new Date().getFullYear();
+        }
+      });
+    </script>  
+
+</body>
+
+</html>
